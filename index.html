@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftHub — Умный лаунчер для софта и баз</title>
+    <meta name="description" content="SoftHub — каталог софта, аренда программ, парсер баз данных, каналы с контентом. Всё в одном лаунчере.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">Soft<span class="logo-accent">Hub</span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link" data-i18n="nav_home">Главная</a>
+                <a href="#features" class="nav-link" data-i18n="nav_features">Возможности</a>
+                <a href="#softs" class="nav-link" data-i18n="nav_softs">Софты</a>
+                <a href="#howitworks" class="nav-link" data-i18n="nav_how">Как работает</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="lang-btn" id="langToggleBtn">EN</button>
+                <a href="https://github.com/bstoresdota-tech/bases/releases/download/v9.1.4/SoftHubLauncher.exe" class="btn btn-primary btn-sm">
+                    ⬇️ <span data-i18n="nav_download">Скачать</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>🚀</span>
+                        <span data-i18n="hero_badge">v9.1.4 — Новое обновление</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero_title_1">Умный лаунчер</span>
+                        <span class="gradient-text" data-i18n="hero_title_2">для софта и баз</span>
+                    </h1>
+                    <p class="hero-desc" data-i18n="hero_desc">
+                        Покупайте, арендуйте и запускайте софт в один клик.  
+                        Парсинг баз данных, каналы с контентом, автообновления — всё в одном приложении.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://github.com/bstoresdota-tech/bases/releases/download/v9.1.4/SoftHubLauncher.exe" class="btn btn-primary btn-lg">
+                            ⬇️ <span data-i18n="hero_download">Скачать SoftHub</span>
+                        </a>
+                        <a href="#softs" class="btn btn-outline btn-lg">
+                            <span data-i18n="hero_view">Смотреть софты</span> →
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-i18n="stat_softs">программ</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label" data-i18n="stat_support">поддержка</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label" data-i18n="stat_users">пользователей</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-glow"></div>
+                    <div class="app-preview">
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="preview-title">SoftHub Launcher 9.1.4</div>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-soft-item">
+                                <span>📧</span> Outlook Checker
+                                <span class="preview-badge">VALID</span>
+                            </div>
+                            <div class="preview-soft-item">
+                                <span>🔐</span> MultiChecker Pro
+                                <span class="preview-badge">RUN</span>
+                            </div>
+                            <div class="preview-soft-item">
+                                <span>🗃</span> Database Parser
+                                <span class="preview-badge">ORDER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="features_tag">Что внутри</span>
+                    <h2 class="section-title" data-i18n="features_title">Всё для комфортной работы</h2>
+                    <p class="section-desc" data-i18n="features_desc">SoftHub объединяет магазин софта, парсер баз и социальную сеть в одном приложении</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛒</div>
+                        <h3 class="feature-title" data-i18n="feature_1_title">Каталог софта</h3>
+                        <p class="feature-desc" data-i18n="feature_1_desc">Более 50 программ: чекеры, грабберы, SMTP тулзы. Удобный поиск и фильтрация по категориям</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⏱️</div>
+                        <h3 class="feature-title" data-i18n="feature_2_title">Аренда софта</h3>
+                        <p class="feature-desc" data-i18n="feature_2_desc">Арендуйте программы по часам, дням или неделям. Экономьте бюджет для редких задач</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎁</div>
+                        <h3 class="feature-title" data-i18n="feature_3_title">Триалы</h3>
+                        <p class="feature-desc" data-i18n="feature_3_desc">Попробуйте любой софт бесплатно. Триал до 20 минут — проверьте перед покупкой</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📢</div>
+                        <h3 class="feature-title" data-i18n="feature_4_title">Каналы с базами</h3>
+                        <p class="feature-desc" data-i18n="feature_4_desc">Пользователи делятся базами данных. Скачивайте, публикуйте, зарабатывайте рейтинг</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🗃️</div>
+                        <h3 class="feature-title" data-i18n="feature_5_title">Парсер баз</h3>
+                        <p class="feature-desc" data-i18n="feature_5_desc">Заказ баз по домену от 500k до 10M строк. Цена от 15$ за миллион</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3 class="feature-title" data-i18n="feature_6_title">Автообновления</h3>
+                        <p class="feature-desc" data-i18n="feature_6_desc">Лаунчер и софты обновляются автоматически. Всегда актуальные версии</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOFTS SECTION -->
+        <section id="softs" class="softs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="softs_tag">Популярные программы</span>
+                    <h2 class="section-title" data-i18n="softs_title">Топ софтов SoftHub</h2>
+                    <p class="section-desc" data-i18n="softs_desc">Чекеры, грабберы и тулзы для профессионалов</p>
+                </div>
+                <div class="softs-grid">
+                    <div class="soft-card">
+                        <div class="soft-icon">📧</div>
+                        <div class="soft-info">
+                            <h4 class="soft-name">Outlook Checker</h4>
+                            <p class="soft-desc">Проверка Microsoft аккаунтов (Outlook/Hotmail). VALID/2FA/INVALID.</p>
+                            <div class="soft-price">
+                                <span class="price-buy">$140</span>
+                                <span class="price-rent">от $4/час</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soft-card">
+                        <div class="soft-icon">🔐</div>
+                        <div class="soft-info">
+                            <h4 class="soft-name">MultiChecker Pro</h4>
+                            <p class="soft-desc">Универсальный чекер: SSH, WordPress, cPanel, Прокси. 5 инструментов в 1.</p>
+                            <div class="soft-price">
+                                <span class="price-buy">$140</span>
+                                <span class="price-rent">от $12/неделя</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soft-card">
+                        <div class="soft-icon">📬</div>
+                        <div class="soft-info">
+                            <h4 class="soft-name">IMAP Checker Pro</h4>
+                            <p class="soft-desc">Проверка email:password через IMAP. Автоопределение сервера.</p>
+                            <div class="soft-price">
+                                <span class="price-buy">$210</span>
+                                <span class="price-rent">от $4/час</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soft-card">
+                        <div class="soft-icon">📧</div>
+                        <div class="soft-info">
+                            <h4 class="soft-name">SMTP Grabber Pro</h4>
+                            <p class="soft-desc">Извлекает рабочие SMTP из combo (email:password). Многопоточный граббер.</p>
+                            <div class="soft-price">
+                                <span class="price-buy">$90</span>
+                                <span class="price-rent">от $3/час</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center softs-more">
+                    <a href="https://github.com/bstoresdota-tech/bases/releases/download/v9.1.4/SoftHubLauncher.exe" class="btn btn-primary">
+                        ⬇️ <span data-i18n="softs_more">Скачать SoftHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="howitworks" class="howitworks">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="how_tag">Простой старт</span>
+                    <h2 class="section-title" data-i18n="how_title">Как начать пользоваться</h2>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">⬇️</div>
+                        <h4 class="step-title" data-i18n="step1_title">Скачай лаунчер</h4>
+                        <p class="step-desc" data-i18n="step1_desc">Загрузи установщик с GitHub и запусти его</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">📝</div>
+                        <h4 class="step-title" data-i18n="step2_title">Зарегистрируйся</h4>
+                        <p class="step-desc" data-i18n="step2_desc">Создай аккаунт за 30 секунд</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">💰</div>
+                        <h4 class="step-title" data-i18n="step3_title">Пополни баланс</h4>
+                        <p class="step-desc" data-i18n="step3_desc">USDT, BTC, ETH, TON, SOL, TRX</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">🚀</div>
+                        <h4 class="step-title" data-i18n="step4_title">Покупай и запускай</h4>
+                        <p class="step-desc" data-i18n="step4_desc">Выбирай софт, оплачивай и работай</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2 class="cta-title" data-i18n="cta_title">Готов начать зарабатывать?</h2>
+                    <p class="cta-desc" data-i18n="cta_desc">Присоединяйся к сообществу SoftHub уже сегодня</p>
+                    <a href="https://github.com/bstoresdota-tech/bases/releases/download/v9.1.4/SoftHubLauncher.exe" class="btn btn-primary btn-lg">
+                        ⬇️ <span data-i18n="cta_btn">Скачать SoftHub бесплатно</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">Soft<span class="logo-accent">Hub</span></span>
+                    </div>
+                    <p data-i18n="footer_desc">Умный лаунчер для софта и баз данных</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer_product">Продукт</h4>
+                        <a href="#softs" data-i18n="footer_softs">Софты</a>
+                        <a href="#features" data-i18n="footer_features">Возможности</a>
+                        <a href="#howitworks" data-i18n="footer_how">Как работает</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer_support">Поддержка</h4>
+                        <a href="https://t.me/Softhub_official" target="_blank">📨 Telegram</a>
+                        <a href="https://github.com/bstoresdota-tech" target="_blank">🐙 GitHub</a>
+                        <a href="#" id="docsLink">📖 Документация</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer_legal">Правовая</h4>
+                        <a href="#" id="termsLink" data-i18n="footer_terms">Пользовательское соглашение</a>
+                        <a href="#" id="privacyLink" data-i18n="footer_privacy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SoftHub. <span data-i18n="footer_copyright">Все права защищены</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
